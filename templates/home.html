@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}InternFlow AI — Your internship, in motion{% endblock %}
+{% block page_class %}page-home{% endblock %}
+{% block content %}
+<section class="travel-hero">
+  <div class="travel-hero-copy">
+    <div class="eyebrow eyebrow-light"><span class="pulse"></span> THE INTERNSHIP JOURNEY, REIMAGINED</div>
+    <h1>Turn your potential<br>into <em>real progress.</em></h1>
+    <p class="lead">One clear path from your first task to your final milestone. Learn, build, submit and grow—with your mentor and AI guidance in your corner.</p>
+    <div class="hero-actions"><a class="button button-white" href="{% url 'register' %}">Start your journey <span>↗</span></a><a class="button button-glass" href="{% url 'login' %}">Sign in to workspace</a></div>
+    <div class="hero-trust"><span>✓ Personal task roadmap</span><span>✓ Mentor-led reviews</span><span>✓ Progress you can see</span></div>
+  </div>
+  <div class="journey-visual" aria-label="Internship progress preview">
+    <div class="visual-glow"></div><div class="floating-label label-top"><span class="mini-check">✓</span><span><b>Milestone unlocked</b><small>API foundations complete</small></span></div>
+    <div class="journey-card">
+      <div class="journey-card-top"><span class="journey-avatar">IF</span><span><small>YOUR LEARNING JOURNEY</small><b>Project overview</b></span><span class="live-dot"></span></div>
+      <div class="journey-progress-title"><span>Overall progress</span><b>68%</b></div><div class="progress-line"><i style="width:68%"></i></div>
+      <div class="journey-milestones"><div class="milestone done"><span>✓</span><div><b>Project onboarding</b><small>Completed · 2 tasks</small></div></div><div class="milestone active"><span>02</span><div><b>Build REST API authentication</b><small>In progress · Due soon</small></div><i></i></div><div class="milestone"><span>03</span><div><b>Mentor review</b><small>Next step · Scheduled after confirmation</small></div></div></div>
+      <div class="ai-nudge"><span class="ai-spark">✦</span><div><b>Your AI mentor is ready</b><small>Get a hint, clarify requirements or debug a blocker.</small></div><span class="nudge-arrow">↗</span></div>
+    </div>
+    <div class="floating-label label-bottom"><span class="calendar-icon">▦</span><span><b>Review-ready workflow</b><small>Tasks, feedback and next steps</small></span></div>
+  </div>
+  <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+</section>
+<section class="journey-intro"><div><span class="eyebrow">A BETTER WAY TO LEARN BY DOING</span><h2>Every task moves you<br><em>one step further.</em></h2></div><p>From first assignment to final sign-off, keep your work, questions, submissions and feedback connected in one thoughtfully designed workspace.</p></section>
+<section class="feature-grid">
+  <article class="feature-card" data-reveal><span class="feature-icon icon-green">↗</span><span class="feature-index">01 / YOUR ROADMAP</span><h3>Know what comes next</h3><p>Task instructions, deliverables, deadlines and dependencies are clear from day one.</p><a href="{% url 'register' %}">Build your profile <span>→</span></a></article>
+  <article class="feature-card" data-reveal><span class="feature-icon icon-blue">✦</span><span class="feature-index">02 / AI MENTOR</span><h3>Get unstuck faster</h3><p>Ask questions, explore concepts and get guidance grounded in your assigned task.</p><a href="{% url 'login' %}">Explore your workspace <span>→</span></a></article>
+  <article class="feature-card" data-reveal><span class="feature-icon icon-amber">▦</span><span class="feature-index">03 / REVIEW & GROW</span><h3>Turn feedback into progress</h3><p>Keep submission versions, mentor decisions and improvement steps together.</p><a href="{% url 'register' %}">Get started <span>→</span></a></article>
+</section>
+<section class="home-cta"><div><span class="eyebrow eyebrow-light">YOUR NEXT CHAPTER STARTS HERE</span><h2>Make your work count.</h2><p>Create your account and get ready for a more focused internship experience.</p></div><a class="button button-white" href="{% url 'register' %}">Create your account <span>↗</span></a></section>
+{% endblock %}

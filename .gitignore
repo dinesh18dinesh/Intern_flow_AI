@@ -1,0 +1,10 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+db.sqlite3
+private_uploads/
+staticfiles/
+.coverage
+.pytest_cache/
